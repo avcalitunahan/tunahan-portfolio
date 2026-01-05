@@ -13,7 +13,7 @@ This project is a modern personal portfolio website built with **cloud-native te
 
 Below is the architectural diagram showing the data flow from the client to the serverless backend.
 
-![Architecture Diagram](docs/Resume-Site-AWS.drawio.png)
+![Architecture Diagram](docs/Resume-Site-AWS.drawio.png?v=1)
 
 
 ---
