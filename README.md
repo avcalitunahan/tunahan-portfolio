@@ -1,6 +1,6 @@
-# Tunahan Avcu - Personal Portfolio
+# Ali Tunahan Avcu - Personal Portfolio
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/avcalitunahan/tunahan-portfolio/deploy.yml?label=Build&logo=github)
+[![Deploy to S3](https://github.com/avcalitunahan/tunahan-portfolio/actions/workflows/deploy.yaml/badge.svg)](https://github.com/avcalitunahan/tunahan-portfolio/actions/workflows/deploy.yaml)
 ![AWS](https://img.shields.io/badge/AWS-Serverless-orange?logo=amazon-aws)
 
 This project is a modern personal portfolio website built with **cloud-native technologies**. It features static site hosting, a serverless backend architecture, and a fully automated CI/CD pipeline.
