@@ -26,7 +26,7 @@ jobs:
     
     # Build Project
     - name: Build Project
-      run: npm run Build
+      run: npm run build
 
     # Create Config File
     - name: Create Config File in Dist 
