@@ -1,0 +1,13 @@
+# Bağımlılıklar (GitHub Action bunları kendi kuracak)
+node_modules/
+
+# Sistem Dosyaları (Gereksizler)
+.DS_Store
+Thumbs.db
+
+# Gizli Dosyalar ve Config (Çok Önemli!)
+.env
+js/config.js
+
+# Eğer build alıyorsan çıktı klasörü de gitmemeli (Opsiyonel ama önerilir)
+dist/

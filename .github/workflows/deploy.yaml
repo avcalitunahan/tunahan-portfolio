@@ -1,0 +1,45 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Pull the Code
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Node.js Setup
+    - name: Setup Node.js 
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    # Install Dependencies
+    - name: Install Dependencies
+      run: npm Install
+    
+    # Build Project
+    - name: Build Project
+      run: npm run Build
+
+    # Create Config File
+    - name: Create Config File in Dist 
+      run: |
+        echo "const config = { lambdaUrl: '${{ secrets.LAMBDA_URL }}' };" > dist/js/config
+
+    # Deploy to S3
+    - name: Deploy to S3
+      uses: jakejarvis/s3-sync-action@master
+      with: 
+        args: --acl public-read  --follow-symlinks --delete
+      env:
+        AWS_S3_BUCKET: ${{ secrets.AWS_BUCKET_NAME }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        SOURCE_DIR: 'dist'

@@ -1,0 +1,239 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Ali Tunahan Avcu - Resume
+
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+        // Navigation
+        nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+            a.navbar-brand.js-scroll-trigger(href='#page-top')
+                // Mobile View 
+                span.d-block.d-lg-none Ali Tunahan Avcu
+                
+                // Desktop View(Resim + Badge)
+                span.d-none.d-lg-block.text-center
+                    
+                    // 1. Profile 
+                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-3(src='assets/img/profile.jpg', alt='...')
+                    
+                    // 2. AWS Badge 
+                    div.d-flex.align-items-center.justify-content-center.px-4.py-3.rounded.bg-dark.text-white.border.border-secondary(style="box-shadow: 0 4px 6px rgba(0,0,0,0.3); width:auto; margin: 0 auto;")
+                        
+                        i.fab.fa-aws.me-2(style="color: #FF9900; font-size: 1.6rem;")
+                        
+                        // Yazı Alanı
+                        div.d-flex.flex-column.align-items-start(style="line-height: 1;")
+                            // Yazı boyutu 0.6rem'e çekildi
+                            span.text-white-50.text-uppercase(style="font-size: 0.6rem; letter-spacing: 0.5px; font-weight: 700;") Daily Unique
+                            span.text-white-50.text-uppercase(style="font-size: 0.6rem; letter-spacing: 0.5px; font-weight: 700;") Visitor
+                            
+                            // Sayı 1.2rem'e çekildi (Hala belirgin ama bağırmıyor)
+                            span#visitor-counter.fw-bold.text-warning(style="font-size: 1.2rem;") Loading...
+
+            button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            
+            #navbarResponsive.collapse.navbar-collapse
+                ul.navbar-nav
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#about') About
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#experience') Experience
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#education') Education
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#skills') Skills
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#interests') Interests
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#certifications') Certifications
+
+        // Page Content
+        .container-fluid.p-0
+
+            // About
+            section#about.resume-section
+                .resume-section-content
+                    h1.mb-0(lang='tr')
+                        | Ali Tunahan
+                        span.text-primary Avcu
+                    .subheading.mb-5
+                        | 
+                        a.text-lowercase(href='mailto:alitunahanavcu@gmail.com') alitunahanavcu@gmail.com
+                    p.lead.mb-5
+                        | Information Systems Engineering graduate passionate about Cloud Computing and DevOps. Experienced in AWS operations (EC2, Lambda, S3) through my internship at NTT DATA, supporting global enterprise clients. Combining my software development background in Python and  Node.js with infrastructure knowledge, I am dedicated to building scalable, automated, and secure cloud solutions.
+                    .social-icons
+                        a.social-icon(href='https://www.linkedin.com/in/ali-tunahan-avcu-9631941b2/?locale=en_US')
+                            i.fab.fa-linkedin-in
+                        a.social-icon(href='https://github.com/avcalitunahan/')
+                            i.fab.fa-github
+                        a.social-icon(href='https://medium.com/@alitunahanavcu')
+                            i.fab.fa-medium 
+    
+
+            hr.m-0
+
+            // Experience
+            section#experience.resume-section
+               .resume-section-content
+                    h2.mb-5 Experience
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Cloud Intern
+                            .subheading.mb-3 NTT DATA Business Solutions
+                            p
+                                | Supported Quick-Support operations within AWS-based services, Worked with AWS services: IAM, EC2, Lambda, S3, Secret Manager, CloudWatch, Tag Editor.
+                        .flex-shrink-0
+                            span.text-primary June 2024 - December 2024
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 SAP FI Intern
+                            .subheading.mb-3 NTT DATA Business Solutions
+                            p
+                                | Conducting unit tests in the integration and participating in the analysis of financial modules in SAP S/4HANA projects
+                        .flex-shrink-0
+                            span.text-primary December 2024 - August 2025
+
+
+            hr.m-0
+
+            // Education
+            section#education.resume-section
+                .resume-section-content
+                    h2.mb-5 Education
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 University of Kocaeli
+                            .subheading.mb-3 Bachelor of Information Systems Engineering
+                            p GPA: 3.11
+                        .flex-shrink-0
+                            span.text-primary  Graduation: 2024
+
+            hr.m-0
+
+            // Skills
+            section#skills.resume-section
+                .resume-section-content
+                    h2.mb-5 Skills
+                    .subheading.mb-3 Programming Languages & Tools
+                    ul.list-inline.dev-icons
+                        li.list-inline-item
+                            i.fab.fa-aws
+                        li.list-inline-item
+                            i.fab.fa-linux
+                        li.list-inline-item
+                            i.fab.fa-git-alt(title="Git")
+                        li.list-inline-item
+                            i.fab.fa-docker
+                        li.list-inline-item
+                            i.fab.fa-github
+                        li.list-inline-item
+                            i.fas.fa-code(title="Terraform / IaC")
+                        li.list-inline-item
+                            i.fas.fa-infinity(title="CI/CD Pipelines")
+                        li.list-inline-item
+                            i.fas.fa-terminal(title="Ansible / Automation")
+                        li.list-inline-item
+                            i.fab.fa-python
+                        li.list-inline-item
+                            i.fab.fa-node.js
+                        li.list-inline-item
+                            i.fab.fa-golang
+                        li.list-inline-item
+                            i.fab.fa-npm
+                    .subheading.mb-3 Workflow
+                    ul.fa-ul.mb-0
+                       ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Infrastructure as Code (IaC) Principles
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | CI/CD Pipelines & Automation
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Version Control (Git Flow) & Documentation
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Cloud Security & Monitoring Best Practices
+            hr.m-0
+
+            // Interests
+            section#interests.resume-section
+                .resume-section-content
+                    h2.mb-5 Interests
+                    p
+                        |I enjoy spending time with my family and close friends. I like doing and watching sports. Discovering new things excites me, and if it makes me happy, that's great
+                    p.mb-0
+                        | I've been trying to make good use of time for improving myself technically in these days 
+            hr.m-0
+
+            // Certifications
+            section#certifications.resume-section
+                .resume-section-content
+                    h2.mb-5 Certifications
+                    ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fas.fa-certificate.text-warning
+                            | SAP Financials Essential Training - National Association of State Boards of Accountancy (NASBA)
+                        li
+                            span.fa-li
+                                i.fas.fa-certificate.text-warning
+                            | SAP ERP Essential Traning - Linkedln
+                        li
+                            span.fa-li
+                                i.fas.fa-certificate.text-warning
+                            | English C1 Level Certificate - Toptalent.co
+
+    footer.bg-white.py-4.mt-auto
+        .container.px-5
+            .row.align-items-center.justify-content-between.flex-column.flex-sm-row
+                .col-auto
+                    .small.m-0
+                        | Copyright &copy; Ali Tunahan Avcu 2026
+                
+                // --- ZİYARETÇİ SAYACI BURADA ---
+                .col-auto
+                    .small.text-muted
+                        | Daily Unique Visitor
+                        //- JS bu ID'yi (visitor-counter) bulup içini dolduracak
+                        span#visitor-counter-footer.fw-bold Loading...
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
+
+        // Config File
+        script(src='js/config.js')
+
+        // Vistor Counter - js/counter.js
+        script(src='js/counter.js')
