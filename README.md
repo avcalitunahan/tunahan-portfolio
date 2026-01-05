@@ -34,6 +34,12 @@ The project utilizes the following technologies and architectural patterns:
 * **AWS Function URL:** Lightweight endpoint structure replacing API Gateway.
 * **AWS S3:** Static asset hosting (HTML, CSS, JS, Images).
 
+### Networking & Security 🛡️
+* **Amazon Route 53:** DNS configuration and domain management.
+* **Amazon CloudFront:** Content Delivery Network (CDN) for global low latency and secure HTTPS (SSL/TLS) connection.
+* **AWS WAF (Web Application Firewall):** Attached to CloudFront to protect the web application against common exploits, bots, and DDoS attacks.
+    * *Security Rule:* IP-based Rate Limiting (100 req/5min) is implemented to prevent abuse.
+
 ### DevOps & CI/CD ⚙️
 * **GitHub Actions:** Automation pipeline triggered on push to `main`.
 * **Automated Build:** Compiles `Pug` to HTML and `SCSS` to CSS.
