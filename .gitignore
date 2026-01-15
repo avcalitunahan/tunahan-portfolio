@@ -7,7 +7,5 @@ Thumbs.db
 
 # Gizli Dosyalar ve Config (Çok Önemli!)
 .env
-js/config.js
-
 # Eğer build alıyorsan çıktı klasörü de gitmemeli (Opsiyonel ama önerilir)
 dist/

@@ -28,11 +28,6 @@ jobs:
     - name: Build Project
       run: npm run build
 
-    # Create Config File
-    - name: Create Config File in Dist 
-      run: |
-        echo "const config = { lambdaUrl: '${{ secrets.LAMBDA_URL }}' };" > dist/js/config
-
     # Deploy to S3
     - name: Deploy to S3
       uses: jakejarvis/s3-sync-action@master
