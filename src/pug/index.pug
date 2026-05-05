@@ -73,9 +73,17 @@ html(lang='en')
             // About
             section#about.resume-section
                 .resume-section-content
-                    h1.mb-0(lang='tr')
-                        | Ali Tunahan
-                        span.text-primary Avcu
+                    .row.align-items-center.mb-4
+                        .col-12
+                            .d-flex.flex-column
+                                .d-flex.align-items-center.gap-3.flex-wrap
+                                    h1.mb-0(lang='tr')
+                                        | Ali Tunahan
+                                        span.text-primary Avcu
+                                    a(href='https://www.credly.com/badges/85320e5d-66db-4f0e-8aff-56c3789aeb44/public_url', target='_blank', rel='noopener noreferrer', class='d-inline-block')
+                                        img.img-fluid(src='assets/img/aws-saa-badge.png', alt='AWS Certified Solutions Architect - Associate badge', style='max-width: 120px;')
+                                p.lead.text-primary.mb-2.mt-3
+                                    | Cloud & DevOps Engineer
                     .subheading.mb-5
                         | 
                         a.text-lowercase(href='mailto:alitunahanavcu@gmail.com') alitunahanavcu@gmail.com
@@ -199,6 +207,10 @@ html(lang='en')
                 .resume-section-content
                     h2.mb-5 Certifications
                     ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fas.fa-certificate.text-warning
+                            | AWS Certified Solutions Architect - Associate - Amazon Web Services (AWS)
                         li
                             span.fa-li
                                 i.fas.fa-certificate.text-warning
